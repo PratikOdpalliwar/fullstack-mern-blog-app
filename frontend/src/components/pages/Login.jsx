@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     await axios
       .post(
-        "https://fullstack-mern-blog-server.vercel.app/api/v1/user/login",
+        "http://localhost:4000/api/v1/user/login",
         { email, password, role },
         {
           withCredentials: true,
