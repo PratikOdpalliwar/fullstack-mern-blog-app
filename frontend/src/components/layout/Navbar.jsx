@@ -14,7 +14,7 @@ const Navbar = () => {
     setShow(!show);
   };
   
-  const isDashboard = useLocation("https://clearcutblogs-app.vercel.app/dashboard");
+  const isDashboard = useLocation("http://localhost:5174/dashboard");
   
   const { mode, setMode, isAuthenticated, user, setIsAuthenticated } = useContext(Context);
   
