@@ -5,7 +5,7 @@ import { FaGitSquare } from "react-icons/fa";
 import { Context } from "../../main";
 
 const Footer = () => {
-  const isDashboard = useLocation("http://localhost:5173/dashboard");
+  const isDashboard = useLocation("https://clearcutblogs-app.vercel.app/dashboard");
   const { mode, setMode } = useContext(Context);
 
   return (
@@ -27,7 +27,7 @@ const Footer = () => {
             ullam, nesciunt ex laudantium quidem error sint, eum explicabo.
           </p>
           <p>
-            <span>Email:</span>zk@gmail.com
+            <span>Email:</span>clearcutblogs@gmail.com
           </p>
           <p>
             <span>Phone:</span>0123987123
@@ -73,7 +73,7 @@ const Footer = () => {
           <Link to={"/"} target="_blank">
             <FaGitSquare />
           </Link>
-          <Link to={"https://www.youtube.com/@CodeWithZeeshu"} target="_blank">
+          <Link to={"/"} target="_blank">
             <AiFillYoutube />
           </Link>
           <Link to={"/"} target="_blank">

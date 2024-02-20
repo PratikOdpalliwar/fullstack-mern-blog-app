@@ -23,7 +23,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/user/myprofile",
+          "https://clearcutblogs-server.vercel.app/api/v1/user/myprofile",
           {
             withCredentials: true,
           }
@@ -31,7 +31,7 @@ const App = () => {
         setUser(data.user);
         setIsAuthenticated(true);
       } catch (error) {
-        console.log(error);
+        // console.log(error);
         setIsAuthenticated(false);
         setUser({});
       }
@@ -39,7 +39,7 @@ const App = () => {
     const fetchBlogs = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/blog/all",
+          "https://clearcutblogs-server.vercel.app/api/v1/blog/all",
           { withCredentials: true }
         );
         setBlogs(data.allBlogs);
