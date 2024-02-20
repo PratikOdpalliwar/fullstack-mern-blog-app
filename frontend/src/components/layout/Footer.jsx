@@ -5,7 +5,7 @@ import { FaGitSquare } from "react-icons/fa";
 import { Context } from "../../main";
 
 const Footer = () => {
-  const isDashboard = useLocation("https://clearcutblogs-app.vercel.app/dashboard");
+  const isDashboard = useLocation("http://localhost:5173/dashboard");
   const { mode, setMode } = useContext(Context);
 
   return (
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container">
-        <div className="logo">ZETA <span>BLOG</span></div>
+        <div className="logo">clearcut <span>Blogs</span></div>
         <div className="links">
           <Link to={"/"} target="_blank">
             <AiFillInstagram />
