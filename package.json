@@ -9,5 +9,8 @@
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^2.0.3"
+  }
 }
