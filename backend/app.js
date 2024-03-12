@@ -1,5 +1,5 @@
 import express from "express";
-import path from "path";
+// import path from "path";
 import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
@@ -13,7 +13,7 @@ const app = express();
 dotenv.config({ path: "./config/config.env" });
 
 //for deployment
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
@@ -49,11 +49,11 @@ dbConnection();
 
 app.use(errorMiddleware);
 
-//middlewar for deployment
-app.use(express.static(path.join(__dirname, "/frontend/dist")));
+// //middlewar for deployment
+// app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
-app.get("*", (req, res) => {
-	res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
-});
+// app.get("*", (req, res) => {
+// 	res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+// });
 
 export default app;

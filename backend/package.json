@@ -5,9 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "server": "nodemon backend/server.js",
-    "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
